@@ -1,0 +1,61 @@
+/* TYPEFACES ARE DEFINED HERE --> ADD / MODIFY <TYPEFACES> HERE */
+/* font-family: 'Noto Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700&display=swap');
+
+
+/* VARIABLES ARE DEFINED HERE --> ADD / MODIFY <VARIABLES> HERE */
+
+$theme-red: #FF6868;
+$theme-green: #71FF76;
+$theme-blue: #6970FF;
+$theme-yellow: #FFE13B;
+$theme-black: #333333;
+$theme-default: #AFAFAF;
+
+$wrapper-shadow-min: drop-shadow(0px 6px 12px rgba(0, 0, 0, .25));
+$wrapper-shadow-max: drop-shadow(0px 8px 16px rgba(0, 0, 0, .25));
+
+
+$generic-white: #FFFFFF;
+
+$generic-font: 'Noto Sans', sans-serif;
+
+
+/* USER AGENT STYLE RESETS ARE DEFINED HERE --> ADD / MODIFY <RESETS> HERE */
+
+[data-hidden="true"] { display: none; }
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &:focus { border: none; outline: none; }
+}
+
+
+/* MEDIA QUERY IS DEFINED HERE --> ADD / MODIFY <MEDIA QUERY> HERE */
+
+@mixin mediaQuery($arg) {
+  @media screen and (min-width: $arg) {
+    @content;
+  }
+}
+
+
+/* STYLES ARE DEFINED HERE --> ADD /MODIFY <STYLES> HERE */
+
+#template_name_e01 {
+  
+
+  @include mediaQuery(768px) {
+    
+  }
+
+  @include mediaQuery(1200px) {
+    
+  }
+}

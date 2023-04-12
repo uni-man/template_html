@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": [ "es6", "dom" ],
+    "target": "es2015",
+    "watch": true,
+    "module": "commonjs",
+    "sourceMap": false,
+    "removeComments": true,
+    "rootDir": "./resource/ts",
+    "outDir": "resource/js"
+  },
+  "include": [ "resource/ts/**/*.ts" ],
+  "exclude": [ "resource/ts/module/**/*.ts" ]
+
+  /*
+    To use any external `.js` files function in `.ts`
+    add the following code via include
+  */
+
+  // "include": [ "resource/ts/**/*.ts", "resource/js/<script_name>.js" ],
+  
+  /*
+    Excludes any particular `.ts` file from compiling to `.js`
+  */
+  
+  //"exclude": [ "resource/ts/namespace.ts" ]
+}
